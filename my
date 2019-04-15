@@ -1,0 +1,7 @@
+#!/bin/sh
+
+BIN="/opt/devkitpro/devkitARM/bin/"
+
+$BIN/arm-none-eabi-gcc -mthumb-interwork -specs=gba.specs main.S
+$BIN/arm-none-eabi-objcopy -O binary a.out a.gba
+#vba a.gba
