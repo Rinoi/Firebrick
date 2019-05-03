@@ -7,9 +7,6 @@ main:
 	strb r1, [r0], #1
 	mov r1, #0x04 // Enable BG2 (BG0 = 1, BG1 = 2, BG2 = 4, ...)
 	strb r1, [r0]
-
-
-
 set:
 	/*init*/
 	mov r4, #0x6000000 //addr GB2

@@ -9,9 +9,7 @@ class RAM
 {
 public:
   RAM();
-  ~RAM();
-
-
+  virtual ~RAM();
 
   template <typename T>
   T getValue(u32 idx)
